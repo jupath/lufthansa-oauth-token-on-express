@@ -1,0 +1,11 @@
+{
+  "name": "oauth-heroku",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "proxy": "process.env.PORT || 3000",
+  "dependencies": {
+    "express": "^4.16.3",
+    "request": "^2.85.0"
+  }
+}

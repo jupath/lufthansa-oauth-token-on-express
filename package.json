@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "proxy": "process.env.PORT || 3000",
+  "heroku-postbuild": "yarn install",
   "dependencies": {
     "express": "^4.16.3",
     "request": "^2.85.0"

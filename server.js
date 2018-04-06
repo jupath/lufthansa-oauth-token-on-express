@@ -1,6 +1,8 @@
 const path = require('path');
 const express = require('express');
 
+require('dotenv').config();
+
 const app = express();
 const publicPath = path.resolve(__dirname);
 const port = process.env.PORT || 3000; // For Heroku
@@ -9,8 +11,8 @@ app.use(express.static(publicPath));
 
 const request = require('request');
 
-const client_id = 'bqtmd99w64x2srt9ccz6jbbg';
-const client_secret = 'UccKseTUMU'
+const client_id = process.env.CLIENT_ID;
+const client_secret = process.env.CLIENT_SECRET;
 
 const authOptions = {
   url: 'https://api.lufthansa.com/v1/oauth/token',

@@ -6,6 +6,7 @@
   "proxy": "process.env.PORT || 3000",
   "heroku-postbuild": "yarn install",
   "dependencies": {
+    "dotenv": "^5.0.1",
     "express": "^4.16.3",
     "request": "^2.85.0"
   }
